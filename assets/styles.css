@@ -112,6 +112,39 @@ a{color:inherit;}
   .nav-links{display:none;}
 }
 
+/* ---------- Ticker ---------- */
+.ticker{
+  border-bottom:1px solid var(--line);
+  background:var(--surface);
+  overflow:hidden;
+  white-space:nowrap;
+}
+.ticker-track{
+  display:inline-flex;
+  animation:ticker-scroll 38s linear infinite;
+  padding:10px 0;
+}
+.ticker-item{
+  font-family:var(--font-mono);
+  font-size:0.78rem;
+  color:var(--text-dim);
+  padding:0 28px;
+  border-right:1px solid var(--line);
+}
+.ticker-item b{color:var(--text); font-weight:500;}
+.ticker-item.bull{color:var(--bull);}
+.ticker-item.bull b{color:var(--bull);}
+.ticker-item.bear{color:var(--bear);}
+.ticker-item.bear b{color:var(--bear);}
+@keyframes ticker-scroll{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+@media (prefers-reduced-motion: reduce){
+  .ticker-track{animation:none;}
+  .ticker{overflow-x:auto;}
+}
+
 /* ---------- Hero ---------- */
 .hero{
   padding:76px 0 40px;
