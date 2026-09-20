@@ -440,6 +440,11 @@ section{padding:88px 0;}
   flex-wrap:wrap;
   gap:10px;
 }
+.chip-row-note{
+  color:var(--text-faint);
+  font-size:0.84rem;
+  margin:14px 0 0;
+}
 .chip{
   font-family:var(--font-mono);
   font-size:0.82rem;
