@@ -18,6 +18,7 @@
     </a>
     <div class="nav-links">
       <a href="#how-it-works">How it works</a>
+      <a href="#chart-types">Chart types</a>
       <a href="#brokers">Broker support</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
@@ -50,8 +51,8 @@
   <div class="wrap hero-grid">
     <div>
       <div class="eyebrow-line"><span class="dot"></span>Runs on your own MetaTrader 5</div>
-      <h1>MT5 shows one chart<br>per window. ACM shows<br>the answer.</h1>
-      <p class="lede">Follow 20 instruments across 3 timeframes and that's up to 60 windows to check by hand — in the platform you already trade on. ACM watches all of them automatically and tells you which ones deserve your attention right now.</p>
+      <h1>MT5 can show you<br>the charts. It can't<br>tell you which ones matter.</h1>
+      <p class="lede">Tiling windows and adding indicators is something MT5 already does. What it doesn't do is look across your watchlist and tell you anything — you still open every chart yourself to find out what's going on. ACM scans all of it automatically, across 9 timeframes, and shows you which instruments deserve a look right now.</p>
       <div class="hero-ctas">
         <a href="#pricing" class="btn btn-primary">Try 7 days for $9.99</a>
         <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
@@ -74,8 +75,8 @@
   <div class="wrap">
     <div class="section-head">
       <div class="kicker">The problem</div>
-      <h2>MetaTrader 5 was built for one chart at a time</h2>
-      <p>It's the platform your broker gives you, and it has no native way to scan a watchlist. So you open a chart, read it, close it, open the next — across every instrument, on every timeframe you care about. By the time you've checked the last one, the first one has already changed.</p>
+      <h2>MetaTrader 5 can't tell you what's happening across your watchlist</h2>
+      <p>You can tile charts and load indicators natively — that part's fine. What's missing is anything that looks at your whole list of instruments and tells you which ones need attention. So you still open each chart yourself, on every timeframe you care about, one at a time. By the time you've checked the last one, the first one has already changed.</p>
     </div>
     <div class="compare">
       <div class="old">
@@ -158,6 +159,62 @@
   </div>
 </section>
 
+<section class="border-top" id="chart-types">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Read price your way</div>
+      <h2>Seven ways to look at the same market</h2>
+      <p>Every panel can be set to candles, line, or one of the specialist styles below. Candles, line, line+markers and step line all use real time-based prices, so the scanner and indicators work on them normally. Heikin-Ashi, Renko and Kagi rebuild the chart from averaged prices or price movement instead of time — genuinely useful for reading trend structure, but display-only, so the scanner switches off automatically on those three.</p>
+    </div>
+
+    <div class="chart-type-grid">
+      <div class="chart-type-tile">
+        <img src="assets/img/chart-line.jpg" alt="BTCUSD shown as a line chart" loading="lazy">
+        <div class="chart-type-cap">
+          <span>Line</span>
+          <span class="tier-tag basic">Basic+</span>
+        </div>
+      </div>
+      <div class="chart-type-tile">
+        <img src="assets/img/chart-line-markers.jpg" alt="BTCUSD shown as a line chart with markers at each price point">
+        <div class="chart-type-cap">
+          <span>Line + markers</span>
+          <span class="tier-tag basic">Basic+</span>
+        </div>
+      </div>
+      <div class="chart-type-tile">
+        <img src="assets/img/chart-step.jpg" alt="BTCUSD shown as a step line chart" loading="lazy">
+        <div class="chart-type-cap">
+          <span>Step line</span>
+          <span class="tier-tag basic">Basic+</span>
+        </div>
+      </div>
+      <div class="chart-type-tile">
+        <img src="assets/img/chart-heikin-ashi.jpg" alt="BTCUSD shown as a Heikin-Ashi chart, with a notice that the scanner is unavailable on this chart type" loading="lazy">
+        <div class="chart-type-cap">
+          <span>Heikin-Ashi</span>
+          <span class="tier-tag pro">Pro</span>
+        </div>
+      </div>
+      <div class="chart-type-tile">
+        <img src="assets/img/chart-renko.jpg" alt="BTCUSD shown as a Renko brick chart, with a notice that the scanner is unavailable on this chart type" loading="lazy">
+        <div class="chart-type-cap">
+          <span>Renko</span>
+          <span class="tier-tag proplus">Pro+</span>
+        </div>
+      </div>
+      <div class="chart-type-tile">
+        <img src="assets/img/chart-kagi.jpg" alt="BTCUSD shown as a Kagi chart, with a notice that the scanner is unavailable on this chart type" loading="lazy">
+        <div class="chart-type-cap">
+          <span>Kagi</span>
+          <span class="tier-tag proplus">Pro+</span>
+        </div>
+      </div>
+    </div>
+    <p class="chart-type-footnote">Plus standard candlestick charts on every plan — the default view used throughout this page.</p>
+  </div>
+</section>
+
 <section class="border-top" id="brokers">
   <div class="wrap">
     <div class="section-head">
@@ -213,6 +270,7 @@
         <div class="plan-sub">one-time · or $6/mo</div>
         <ul>
           <li class="yes"><span class="ico">✓</span> Up to 4 chart panels, any symbol/timeframe</li>
+          <li class="yes"><span class="ico">✓</span> Candles, line, line+markers, step line</li>
           <li class="yes"><span class="ico">✓</span> Auto broker connect &amp; drawing tools</li>
           <li class="no"><span class="ico">–</span> Manual technical studies</li>
           <li class="lock"><span class="ico">◇</span> Scanner — preview only, 1 symbol</li>
@@ -228,6 +286,7 @@
         <div class="plan-sub">one-time · or $14/mo</div>
         <ul>
           <li class="yes"><span class="ico">✓</span> Up to 9 chart panels, any symbol/timeframe</li>
+          <li class="yes"><span class="ico">✓</span> Candles, line, line+markers, step line</li>
           <li class="yes"><span class="ico">✓</span> 10 manual technical studies per chart</li>
           <li class="yes"><span class="ico">✓</span> Track up to 15 instruments</li>
           <li class="lock"><span class="ico">◇</span> Scanner — preview only, 2–3 symbols</li>
@@ -244,6 +303,7 @@
         <div class="plan-sub">one-time · or $27/mo</div>
         <ul>
           <li class="yes"><span class="ico">✓</span> Up to 16 chart panels, any symbol/timeframe</li>
+          <li class="yes"><span class="ico">✓</span> All Lite chart types + Heikin-Ashi</li>
           <li class="yes"><span class="ico">✓</span> Unlimited tracked instruments</li>
           <li class="yes"><span class="ico">✓</span> Full scanner — verdicts across every instrument</li>
           <li class="yes"><span class="ico">✓</span> Divergence grid, all 9 timeframes</li>
@@ -259,6 +319,7 @@
         <div class="plan-sub">one-time</div>
         <ul>
           <li class="yes"><span class="ico">✓</span> Everything in Pro</li>
+          <li class="yes"><span class="ico">✓</span> + Renko and Kagi charts (all 7 types)</li>
           <li class="yes"><span class="ico">✓</span> Multiple broker profiles, saved layouts</li>
           <li class="yes"><span class="ico">✓</span> Priority support</li>
           <li class="yes"><span class="ico">✓</span> Early access to new features</li>
@@ -277,6 +338,11 @@
       <h2>Before you ask</h2>
     </div>
     <div class="faq">
+
+      <div class="faq-item">
+        <button class="faq-q">Do the scanner and indicators work on every chart type?<span class="plus">+</span></button>
+        <div class="faq-a"><p>On candles, line, line+markers and step line — yes, fully. Heikin-Ashi, Renko and Kagi are display-only chart types: they're built from averaged prices or price movement rather than real traded prices, so indicators and the scanner switch off automatically on those, regardless of your plan. Switch back to candles to use them again.</p></div>
+      </div>
 
       <div class="faq-item">
         <button class="faq-q">Does ACM place trades for me?<span class="plus">+</span></button>
