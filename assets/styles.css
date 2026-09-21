@@ -400,6 +400,19 @@ section{padding:88px 0;}
   background:var(--surface);
 }
 .feature-media img{width:100%;}
+.feature-media.toolbar{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 24px;
+  background:
+    radial-gradient(120% 140% at 50% 0%, rgba(217,164,65,0.05), transparent 60%),
+    var(--surface);
+}
+.feature-media.toolbar img{
+  width:auto;
+  max-width:100%;
+}
 
 /* ---------- Chart type grid ---------- */
 .chart-type-grid{
