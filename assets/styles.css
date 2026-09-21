@@ -391,6 +391,10 @@ section{padding:88px 0;}
 }
 .feature-media img{width:100%;}
 .feature-media video{width:100%; display:block;}
+.problem-media{
+  max-width:571px;
+  margin:0 auto 40px;
+}
 .feature-media.toolbar{
   display:flex;
   align-items:center;
