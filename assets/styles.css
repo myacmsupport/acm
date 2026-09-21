@@ -285,8 +285,15 @@ section{padding:88px 0;}
   .compare{grid-template-columns:1fr;}
 }
 .compare > div{
-  background:var(--surface);
   padding:32px 30px;
+}
+.compare.old > div{
+  background:var(--surface);
+}
+.compare.new{
+  background:
+    linear-gradient(155deg, rgba(47,191,113,0.10), rgba(47,191,113,0.02) 60%),
+    var(--surface-2);
 }
 .compare h3{
   font-family:var(--font-mono);
@@ -295,8 +302,8 @@ section{padding:88px 0;}
   margin:0 0 18px;
   color:var(--text-faint);
 }
-.compare.old h3{color:var(--bear);}
-.compare.new h3{color:var(--bull);}
+.compare.old h3{color:var(--text-faint);}
+.compare.new h3{color:var(--bull); font-weight:700;}
 .compare ul{
   margin:0;
   padding:0;
@@ -311,23 +318,18 @@ section{padding:88px 0;}
 .compare li:first-child{border-top:none;padding-top:0;}
 .compare.old li{
   color:var(--text-faint);
+  font-size:0.9rem;
 }
 .compare.new{
   position:relative;
 }
-.compare.new::before{
-  content:'';
-  position:absolute;
-  top:0; left:0; right:0; bottom:0;
-  background:radial-gradient(120% 100% at 0% 0%, rgba(217,164,65,0.06), transparent 60%);
-  pointer-events:none;
-}
 .compare.new li{
-  color:var(--text);
-  font-size:1.04rem;
-  font-weight:600;
-  border-top-color:rgba(47,191,113,0.16);
+  color:var(--bull);
+  font-size:1.08rem;
+  font-weight:700;
+  border-top-color:rgba(47,191,113,0.22);
   position:relative;
+  text-shadow:0 0 18px rgba(47,191,113,0.25);
 }
 .compare.new li::before{
   content:'\2192';
@@ -413,6 +415,28 @@ section{padding:88px 0;}
   width:auto;
   max-width:100%;
 }
+.feature-media.stack{
+  display:flex;
+  flex-direction:column;
+}
+.feature-media.stack img{
+  width:100%;
+  display:block;
+}
+.stack-divider{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px;
+  background:var(--surface-2);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.stack-divider span{
+  font-family:var(--font-mono);
+  font-size:0.76rem;
+  color:var(--gold);
+}
 
 /* ---------- Chart type grid ---------- */
 .chart-type-grid{
@@ -493,10 +517,26 @@ section{padding:88px 0;}
   color:var(--text-dim);
   background:var(--surface-2);
 }
+.chip.scored{
+  border-color:rgba(217,164,65,0.35);
+  color:var(--gold);
+}
+.chip.context{
+  color:var(--text-faint);
+  border-style:dashed;
+}
 .chip.resolved{
   color:var(--bull);
   border-color:rgba(47,191,113,0.35);
 }
+.legend-dot{
+  display:inline-block;
+  width:8px; height:8px;
+  border-radius:2px;
+  margin-right:5px;
+}
+.legend-dot.scored{background:var(--gold);}
+.legend-dot.context{background:var(--text-faint);}
 .broker-arrow{
   font-family:var(--font-mono);
   color:var(--text-faint);

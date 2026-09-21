@@ -14,7 +14,6 @@
   <div class="wrap">
     <a href="#top" class="brand">
       <span class="mark">AC</span>
-      ACM
     </a>
     <div class="nav-links">
       <a href="#how-it-works">How it works</a>
@@ -23,7 +22,7 @@
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="#pricing" class="nav-cta">Try it for $9.99</a>
+    <a href="#pricing" class="nav-cta">Try Pro for $9.99</a>
   </div>
 </nav>
 
@@ -54,7 +53,7 @@
       <h1>MT5 can show you<br>the charts. It can't<br>tell you which ones matter.</h1>
       <p class="lede">Tiling windows and adding indicators is something MT5 already does. What it doesn't do is look across your watchlist and tell you anything — you still open every chart yourself to find out what's going on. ACM scans all of it automatically, across 9 timeframes, and shows you which instruments deserve a look right now.</p>
       <div class="hero-ctas">
-        <a href="#pricing" class="btn btn-primary">Try 7 days for $9.99</a>
+        <a href="#pricing" class="btn btn-primary">Try Pro for $9.99</a>
         <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
       </div>
       <p class="hero-fineprint">Windows desktop app · connects to any MT5 broker · not financial advice</p>
@@ -120,18 +119,21 @@
           <li>Directional cards pulse gently so your eye goes straight to them</li>
         </ul>
         <div class="chip-row">
-          <span class="chip">EMA 21/50/200</span>
-          <span class="chip">SMA 50/100/200</span>
-          <span class="chip">Godmode RSI</span>
-          <span class="chip">VMC Cipher B</span>
-          <span class="chip">SMC Structure</span>
-          <span class="chip">MACD</span>
-          <span class="chip">S/R + Breaks</span>
-          <span class="chip">VWAP</span>
-          <span class="chip">Supertrend</span>
-          <span class="chip">MFI</span>
+          <span class="chip scored">EMA 21/50/200</span>
+          <span class="chip scored">SMA 50/100/200</span>
+          <span class="chip scored">Godmode RSI</span>
+          <span class="chip scored">VMC Cipher B</span>
+          <span class="chip scored">SMC Structure</span>
+          <span class="chip scored">MACD</span>
+          <span class="chip scored">S/R + Breaks</span>
+          <span class="chip scored">VWAP</span>
+          <span class="chip scored">Supertrend</span>
+          <span class="chip scored">MFI</span>
+          <span class="chip context">Volume Profile</span>
+          <span class="chip context">SMC Zones</span>
+          <span class="chip context">Volume</span>
         </div>
-        <p class="chip-row-note">Plus Volume Profile, SMC Zones and Volume — 3 context tools rather than directional signals, so they sit outside the scored verdict above.</p>
+        <p class="chip-row-note"><span class="legend-dot scored"></span> 10 indicators feed the scanner's scored Bullish/Bearish/Mixed verdict &nbsp; <span class="legend-dot context"></span> 3 are context tools available on every chart, without a directional read — all 13 available to attach manually.</p>
       </div>
       <div class="feature-media">
         <img src="assets/img/scanner-grid-multi-asset.jpg" alt="Market Indicator Scanner showing 20 symbols across forex, crypto, indices and metals, each with a bullish, bearish or mixed verdict" loading="lazy">
@@ -157,16 +159,18 @@
     <div class="feature-row">
       <div class="feature-copy">
         <div class="feature-num">03 — the reasoning</div>
-        <h3>Plain language, not just colors</h3>
-        <p>Drill into any timeframe and every indicator explains itself in a sentence — a golden cross, a rejection at resistance, momentum fading below zero — with the exact numbers behind it, one tap further in.</p>
+        <h3>Instrument, then timeframe, then indicator</h3>
+        <p>From the all-timeframe view above, drill into a single timeframe — say M30 on BTCUSD — and every one of the ten indicators explains itself in a sentence, with its own verdict. Tap any row to expand it further: the golden cross, the exact squeeze percentage, when the divergence fired.</p>
         <ul class="feature-list">
+          <li>Symbol → timeframe → indicator, three taps deep, never a black box</li>
           <li>Ten studies, each with a one-line explanation of what it's seeing</li>
-          <li>Expand any indicator for the underlying numbers — spread, crossovers, bars since</li>
-          <li>Nothing is a black box you're asked to trust</li>
+          <li>Expand any indicator for the underlying numbers — crossovers, bars since, divergence age</li>
         </ul>
       </div>
-      <div class="feature-media">
-        <img src="assets/img/scanner-reasoning.jpg" alt="Plain-English reasoning shown next to each of the ten technical indicators" loading="lazy">
+      <div class="feature-media stack">
+        <img src="assets/img/scanner-m30-reasoning.jpg" alt="BTCUSD on the M30 timeframe, showing plain-English reasoning for each of the ten indicators">
+        <div class="stack-divider"><span>tap a row to expand →</span></div>
+        <img src="assets/img/scanner-expanded-detail.jpg" alt="EMA, Godmode RSI and VMC Cipher B expanded to show golden cross, squeeze percentage and divergence timing">
       </div>
     </div>
 
@@ -181,8 +185,8 @@
           <li>Included on Pro and Pro+</li>
         </ul>
       </div>
-      <div class="feature-media toolbar">
-        <img src="assets/img/replay-mode.jpg" alt="Replay mode toolbar showing playback controls, 5x speed, and progress through historical candles">
+      <div class="feature-media">
+        <img src="assets/img/replay-demo.gif" alt="Replay mode in action, scrubbing through historical price action while the scanner's verdict updates">
       </div>
     </div>
   </div>
