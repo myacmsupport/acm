@@ -80,12 +80,8 @@ a{color:inherit;}
 .brand .mark{
   width:26px;height:26px;
   border-radius:5px;
-  background:linear-gradient(155deg, var(--gold), var(--gold-dim));
-  display:inline-flex;align-items:center;justify-content:center;
-  font-family:var(--font-mono);
-  font-size:0.72rem;
-  font-weight:700;
-  color:#14110A;
+  object-fit:cover;
+  display:inline-block;
 }
 .nav-links{
   display:flex;
@@ -394,6 +390,7 @@ section{padding:88px 0;}
   background:var(--surface);
 }
 .feature-media img{width:100%;}
+.feature-media video{width:100%; display:block;}
 .feature-media.toolbar{
   display:flex;
   align-items:center;

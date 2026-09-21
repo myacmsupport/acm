@@ -13,7 +13,7 @@
 <nav class="nav">
   <div class="wrap">
     <a href="#top" class="brand">
-      <span class="mark">AC</span>
+      <img src="assets/img/acm-logo.png" alt="ACM logo" class="mark">
       ACM
     </a>
     <div class="nav-links">
@@ -79,6 +79,11 @@
       <h2>MetaTrader 5 can't tell you what's happening across your watchlist</h2>
       <p>You can tile charts and load indicators natively — that part's fine. What's missing is anything that looks at your whole list of instruments and tells you which ones need attention. So you still open each chart yourself, on every timeframe you care about, one at a time. By the time you've checked the last one, the first one has already changed.</p>
     </div>
+    <div class="feature-media" style="margin-bottom:40px;">
+      <video autoplay loop muted playsinline aria-label="Side-by-side comparison of manually checking charts versus ACM's automated scan">
+        <source src="assets/img/the-problem.mp4" type="video/mp4">
+      </video>
+    </div>
     <div class="compare">
       <div class="old">
         <h3>Opening chart after chart</h3>
@@ -138,7 +143,9 @@
         <p class="chip-row-note"><span class="legend-dot scored"></span> 10 indicators feed the scanner's scored Bullish/Bearish/Mixed verdict &nbsp; <span class="legend-dot context"></span> 3 are context tools available on every chart, without a directional read — all 13 available to attach manually.</p>
       </div>
       <div class="feature-media">
-        <img src="assets/img/01the-snapshot.mp4" alt="Market Indicator Scanner showing 20 symbols across forex, crypto, indices and metals, each with a bullish, bearish or mixed verdict" loading="lazy">
+        <video autoplay loop muted playsinline aria-label="Market Indicator Scanner showing 20 symbols across forex, crypto, indices and metals, each with a bullish, bearish or mixed verdict">
+          <source src="assets/img/01the-snapshot.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
@@ -170,7 +177,9 @@
         </ul>
       </div>
       <div class="feature-media">
-        <img src="assets/img/03the-reasoning.mp4" alt="Cycling between BTCUSD's M30 reasoning list and an expanded indicator view showing golden cross, squeeze percentage and divergence timing">
+        <video autoplay loop muted playsinline aria-label="Cycling between BTCUSD's M30 reasoning list and an expanded indicator view showing golden cross, squeeze percentage and divergence timing">
+          <source src="assets/img/03the-reasoning.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
@@ -206,21 +215,21 @@
         <img src="assets/img/chart-line.jpg" alt="BTCUSD shown as a line chart" loading="lazy">
         <div class="chart-type-cap">
           <span>Line</span>
-          <span class="tier-tag basic">Basic+</span>
+          <span class="tier-tag basic">Essential+</span>
         </div>
       </div>
       <div class="chart-type-tile">
         <img src="assets/img/chart-line-markers.jpg" alt="BTCUSD shown as a line chart with markers at each price point">
         <div class="chart-type-cap">
           <span>Line + markers</span>
-          <span class="tier-tag basic">Basic+</span>
+          <span class="tier-tag basic">Essential+</span>
         </div>
       </div>
       <div class="chart-type-tile">
         <img src="assets/img/chart-step.jpg" alt="BTCUSD shown as a step line chart" loading="lazy">
         <div class="chart-type-cap">
           <span>Step line</span>
-          <span class="tier-tag basic">Basic+</span>
+          <span class="tier-tag basic">Essential+</span>
         </div>
       </div>
       <div class="chart-type-tile">
@@ -258,12 +267,12 @@
     </div>
     <div class="position-tiers">
       <div class="position-tier">
-        <div class="position-tier-name">Basic</div>
+        <div class="position-tier-name">Essential</div>
         <div class="position-tier-cap">1</div>
         <div class="position-tier-label">symbol</div>
       </div>
       <div class="position-tier">
-        <div class="position-tier-name">Lite</div>
+        <div class="position-tier-name">Essential+</div>
         <div class="position-tier-cap">3</div>
         <div class="position-tier-label">symbols</div>
       </div>
@@ -330,7 +339,7 @@
     <div class="pricing-grid">
 
       <div class="plan basic">
-        <div class="plan-name">Basic</div>
+        <div class="plan-name">Essential</div>
         <div class="plan-desc">The charts, plus a taste of the analysis.</div>
         <div class="plan-price"><sup>$</sup>29</div>
         <div class="plan-sub">one-time · or $6/mo</div>
@@ -344,11 +353,11 @@
           <li class="lock"><span class="ico">◇</span> Scanner — preview only, 1 symbol</li>
           <li class="no"><span class="ico">–</span> Automated scanner &amp; divergence grid</li>
         </ul>
-        <a href="#" class="btn btn-ghost">Get Basic</a>
+        <a href="#" class="btn btn-ghost">Get Essential</a>
       </div>
 
       <div class="plan lite">
-        <div class="plan-name">Lite</div>
+        <div class="plan-name">Essential+</div>
         <div class="plan-desc">All 10 indicators, no cap.</div>
         <div class="plan-price"><sup>$</sup>99</div>
         <div class="plan-sub">one-time · or $14/mo</div>
@@ -361,7 +370,7 @@
           <li class="lock"><span class="ico">◇</span> Scanner — preview only, 2–3 symbols</li>
           <li class="no"><span class="ico">–</span> Automated scanner &amp; divergence grid</li>
         </ul>
-        <a href="#" class="btn btn-ghost">Get Lite</a>
+        <a href="#" class="btn btn-ghost">Get Essential+</a>
       </div>
 
       <div class="plan pro">
@@ -372,7 +381,7 @@
         <div class="plan-sub">one-time · or $27/mo</div>
         <ul>
           <li class="yes"><span class="ico">✓</span> Up to 16 chart panels, any symbol/timeframe</li>
-          <li class="yes"><span class="ico">✓</span> All Lite chart types + Heikin-Ashi</li>
+          <li class="yes"><span class="ico">✓</span> All Essential+ chart types + Heikin-Ashi</li>
           <li class="yes"><span class="ico">✓</span> Unlimited tracked instruments*</li>
           <li class="yes"><span class="ico">✓</span> Full scanner — verdicts across every instrument</li>
           <li class="yes"><span class="ico">✓</span> Divergence grid, all 9 timeframes</li>
