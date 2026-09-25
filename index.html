@@ -12,6 +12,21 @@
 .acm-promo-banner{padding:34px 0 12px;}
 .acm-promo-link{display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface);box-shadow:0 24px 60px -35px rgba(0,0,0,.65);}
 .acm-promo-link img{display:block;width:100%;height:auto;}
+
+.acm-top-hero{padding-top:34px;}
+.acm-top-hero-visual{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);box-shadow:0 30px 80px -35px rgba(0,0,0,.7);}
+.acm-top-hero-visual img{display:block;width:100%;height:auto;}
+.acm-top-hero-cta{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:28px 4px 10px;}
+.acm-top-hero-cta p{margin:8px 0 0;color:var(--text-dim);max-width:70ch;font-size:1rem;}
+.acm-top-hero-cta .hero-ctas{margin:0;flex-shrink:0;}
+.mt5-pain .section-head{max-width:760px;}
+.acm-layout-section .section-head{max-width:760px;}
+.acm-layout-visual{margin-top:36px;}
+@media (max-width:820px){
+  .acm-top-hero-cta{display:block;}
+  .acm-top-hero-cta .hero-ctas{margin-top:22px;}
+}
+
 </style>
 </head>
 <body>
@@ -54,50 +69,58 @@
   </div>
 </div>
 
-<header class="hero" id="top">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow-line"><span class="dot"></span>Runs on your own MetaTrader 5</div>
-      <h1>MT5 can show you<br>the charts. It can't<br>tell you which ones matter.</h1>
-      <p class="lede">Tiling windows and adding indicators is something MT5 already does. What it doesn't do is look across your watchlist and tell you anything — you still open every chart yourself to find out what's going on. ACM scans all of it automatically, across 9 timeframes, and shows you which instruments deserve a look right now.</p>
+<header class="hero acm-top-hero" id="top">
+  <div class="wrap">
+    <div class="acm-top-hero-visual">
+      <img src="assets/img/acm-boring-mt5.png" alt="Turn Your Boring MT5 into ACM — advanced analysis, smarter decisions, built for MT5" loading="eager">
+    </div>
+    <div class="acm-top-hero-cta">
+      <div>
+        <div class="eyebrow-line"><span class="dot"></span>Built on top of your existing MetaTrader 5</div>
+        <p>Keep the MT5 connection you already use. ACM adds the analysis, scanning and multi-timeframe workflow that MT5 leaves you to build yourself.</p>
+      </div>
       <div class="hero-ctas">
         <a href="#pricing" class="btn btn-primary">Try Pro for $9.99</a>
-        <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
-      </div>
-      <p class="hero-fineprint">Windows desktop app · connects to any MT5 broker · not financial advice</p>
-    </div>
-    <div>
-      <div class="hero-visual">
-        <img src="assets/img/layouts-cycle.gif" alt="ACM cycling through its available chart layouts, from 1x2 up to 4x4, with each panel on its own symbol and timeframe" loading="eager">
-        <div class="hero-visual-cap">
-          <span>1 to 16 panels</span>
-          <span>every panel, its own symbol &amp; timeframe</span>
-        </div>
+        <a href="#mt5-pain" class="btn btn-ghost">See the MT5 problem</a>
       </div>
     </div>
   </div>
 </header>
 
-<section class="acm-promo-banner" aria-label="Turn Your Boring MT5 into ACM">
+<section class="border-top mt5-pain" id="mt5-pain">
   <div class="wrap">
-    <a href="#pricing" class="acm-promo-link">
-      <img src="assets/img/acm-boring-mt5.png" alt="Turn Your Boring MT5 into ACM — advanced analysis, smarter decisions, built for MT5" loading="lazy">
-    </a>
-  </div>
-</section>
-
-<section class="border-top">
-  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">The MT5 pain</div>
+      <h2>MT5 gives you the tools. It still makes you do the work.</h2>
+      <p>Charts. Indicators. Symbols. Timeframes. They are all there — but the burden is still on you to open the right chart, check the right timeframe, and work out what deserves attention.</p>
+    </div>
     <div class="feature-row">
       <div class="section-head" style="margin-bottom:0;">
-        <div class="kicker">The problem</div>
-        <h2>MetaTrader 5 can't tell you what's happening across your watchlist</h2>
+        <div class="feature-num">01 — before ACM</div>
+        <h3>Too many charts. Too much manual checking.</h3>
         <p>You can tile charts and load indicators natively — that part's fine. What's missing is anything that looks at your whole list of instruments and tells you which ones need attention. So you still open each chart yourself, on every timeframe you care about, one at a time. By the time you've checked the last one, the first one has already changed.</p>
       </div>
       <div class="feature-media">
         <video autoplay loop muted playsinline aria-label="Adding an instrument into ACM straight from your MT5 broker's instrument list">
           <source src="assets/img/the-problem.mp4" type="video/mp4">
         </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="border-top acm-layout-section" id="layouts">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Your workspace, expanded</div>
+      <h2>See more of your market without opening more MT5 windows</h2>
+      <p>ACM lets you build from 1×1 up to 4×4 layouts, with each panel on its own symbol and timeframe. Instead of juggling separate MT5 charts, you can keep the market context you need in one workspace.</p>
+    </div>
+    <div class="hero-visual acm-layout-visual">
+      <img src="assets/img/layouts-cycle.gif" alt="ACM cycling through chart layouts from 1x1 up to 4x4, with each panel on its own symbol and timeframe" loading="lazy">
+      <div class="hero-visual-cap">
+        <span>1×1 → 4×4 layouts</span>
+        <span>up to 16 panels · each with its own symbol &amp; timeframe</span>
       </div>
     </div>
   </div>
