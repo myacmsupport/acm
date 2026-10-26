@@ -103,13 +103,17 @@ footer nav{margin-bottom:16px;color:#fff}footer nav a{color:#dfe6f2}
 #pricing{background:radial-gradient(900px 400px at 62% 60%,rgba(227,171,58,.09),transparent 70%),#0a0f19;color:#eef2f9}
 #pricing .lede,#pricing .note{color:#9aa6bd}
 #pricing .trial{border:1px solid #25304a;background:linear-gradient(90deg,rgba(227,171,58,.10),transparent 70%),#121927}
-#pricing .trial{border:2px solid var(--acc);box-shadow:0 0 60px rgba(227,171,58,.18);padding:34px 36px}
+#pricing .trial{display:grid;grid-template-columns:1fr auto;gap:0 56px;align-items:center;border:2px solid var(--acc);box-shadow:0 0 60px rgba(227,171,58,.18);padding:36px 40px}
 .trial small{letter-spacing:.12em;font-size:13px}
-.trial h3{font-size:30px}
-.tcta{display:flex;flex-direction:column;align-items:center;gap:8px}
+.trial h3{font-size:32px}
+#pricing .trial p{max-width:58ch;font-size:17px}
+.tcta{display:flex;flex-direction:column;align-items:stretch;gap:10px;width:310px;padding-left:48px;border-left:1px solid rgba(227,171,58,.28);text-align:center}
+.tprice b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:60px;font-weight:800;line-height:1;color:#fff;letter-spacing:-.03em}
+.tprice em{display:block;font-style:normal;font-size:14px;color:#a9b6ca;margin-top:6px}
 .tcta span{font-size:13px;color:#a9b6ca}
-#pricing .trial .tcta a{font-size:18px;padding:18px 32px;box-shadow:0 10px 30px -10px rgba(227,171,58,.7);transition:transform .15s}
+#pricing .trial .tcta a{display:block;font-size:17px;padding:16px 20px;box-shadow:0 10px 30px -10px rgba(227,171,58,.7);transition:transform .15s}
 #pricing .trial .tcta a:hover{transform:translateY(-2px);background:#fff}
+@media (max-width:860px){#pricing .trial{grid-template-columns:1fr;gap:28px;padding:28px 24px}.tcta{width:auto;padding:24px 0 0;border-left:0;border-top:1px solid rgba(227,171,58,.28)}}
 #pricing .plan{--a:#8593ad;background:#121927;border:1px solid #25304a;border-top:3px solid var(--a);border-radius:16px;padding:28px 24px 24px}
 #pricing .plan:nth-child(2){--a:#5b8def}#pricing .plan:nth-child(3){--a:#e3ab3a}#pricing .plan:nth-child(4){--a:#a084ea}
 #pricing .plan.pro{background:#1a2336;border-color:#e3ab3a;transform:scale(1.045);z-index:1;box-shadow:0 0 80px rgba(227,171,58,.18)}
@@ -236,8 +240,9 @@ a[href^="mailto"]{color:var(--acc)}
 <p>Full Pro feature set. Your trial starts when you first activate ACM, has no recurring charge, and expires after 30 days. You may purchase any ACM plan after the trial expires.</p>
 </div>
 <div class="tcta">
-<a href="https://myacmhelper.gumroad.com/l/acm-pro-30-day-trial">Start my 30-day trial — $9.99</a>
-<span>One-time payment · No renewal</span>
+<div class="tprice"><b>$9.99</b><em>one-time · 30 days of Pro</em></div>
+<a href="https://myacmhelper.gumroad.com/l/acm-pro-30-day-trial">Start my 30-day trial</a>
+<span>No renewal · Starts at first activation</span>
 </div>
 </div>
 <div class="plans" id="plans"></div>
